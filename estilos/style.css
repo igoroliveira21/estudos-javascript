@@ -79,3 +79,9 @@ div#container {
     background-color: rgb(243, 111, 111);
     cursor: pointer;
 }
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
