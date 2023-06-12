@@ -7,20 +7,23 @@
 </head>
 <body>
     <h1>Brasileiro?</h1>
-    Nacionalidade: <input type="text" name="txt1" id="txt1">
+    Onde você vive: <input type="text" name="txt1" id="txt1">
     <input type="button" value="Verificar" onclick="clicar()">
-    <div id="res">Resultado</div>
+    <div id="res"></div>
 
     <script>
         function clicar() {
             var nacional = window.document.getElementById('txt1')
             var r = window.document.getElementById('res')
-            var br = 'Brasileiro'
-            res.innerHTML = `sua nacionalidade é ${str}`
-            if (r == br ) {
-                r.innerHTML = 'Você é Brasileiro'
-            } 
+            var nal = String(nacional.value)
+            nal.innerHTML = `Você vive em ${nal}`
+            if (nal == 'Brasil') {
+                nal.innerHTML += `<p>Você vive é Brasileiro</p>`
+            } else {
+                nal.innerHTML += `<p>Você é Estrangeiro</p>`
+            }
         }
+            
     </script>
 </body>
 </html>

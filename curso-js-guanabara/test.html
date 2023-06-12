@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Estrangeiro ou BR?</h1>
+    Onde vc mora? <input type="text" name="txtnal" id="txtnal">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar() {
+            var txtv = window.document.getElementById('txtnal')
+            var res = window.document.querySelector('div#res')
+            var nal = String(txtv.value)
+            res.innerHTML = `Sua nacionalidade é ${nal}`
+            if (nal == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro!!</p>`
+            } else {
+                res.innerHTML += '<p>Você é Estrangeiro</p>'
+        }
+    }
+    </script>
+    
+</body>
+</html>
