@@ -3,7 +3,7 @@ var lista = document.querySelector('select#flista')
 var res = document.querySelector('div#res')
 var valores = []
 
-function isNumero(n) {
+function isNumeron(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
