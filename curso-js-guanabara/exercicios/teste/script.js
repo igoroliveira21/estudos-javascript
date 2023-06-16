@@ -12,7 +12,7 @@ function isNumero(n) {
 }
 
 function inLista(n, l) {
-    if(l.indexOf(Number(n)) != -1) {
+    if(l.indexOf(Number(n)) != -1) { // o indexOf vai buscar o valor dentro do vetor, o '!= -1' diferente de -1 é que ele foi encontrado
         return true
     } else {
         return false
