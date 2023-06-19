@@ -12,7 +12,20 @@ const imprimirResultado = function(nota) {
         case 5:
             console.log('Recuperação!')
             break
-        case 4: case 3: case 2:
+        case 4: case 3: case 2: case 1: case 0:
+            console.log('Reprovado')
+            break
+        default:
+                console.log('Nota inválida')
     }
 }
+
+imprimirResultado(10)
+imprimirResultado(7)
+imprimirResultado(5)
+imprimirResultado(3)
+imprimirResultado(-1)
+imprimirResultado(11)
+
+
 
