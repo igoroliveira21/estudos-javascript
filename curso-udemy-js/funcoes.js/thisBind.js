@@ -11,3 +11,4 @@ falar() // conflito entre paradigmas: funional e OO
 
 const falarDePessoa = pessoa.falar.bind(pessoa)
 falarDePessoa() 
+
