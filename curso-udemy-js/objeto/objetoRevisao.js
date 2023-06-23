@@ -34,4 +34,8 @@ const carro = {
 
 carro.proprietario.endereco.numero = 1000
 carro.proprietario.endereco.logradouro = 'Av brail'
+
+
+delete carro.proprietario.endereco
 console.log(carro)
+console.log(carro.condutores.length)
