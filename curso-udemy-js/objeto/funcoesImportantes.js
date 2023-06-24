@@ -10,7 +10,7 @@ console.log(Object.entries(pessoa))
 
 Object.entries(pessoa).forEach(([chave, valor]) => {
     console.log(`${chave}: ${valor}`)
-})
+}) // percorrendo o objeto 
 
 Object.defineProperty(pessoa, 'dataNascimento', {
     enumerable: true,
@@ -18,7 +18,7 @@ Object.defineProperty(pessoa, 'dataNascimento', {
     value: '01/04/1998'
 })
 console.log(pessoa.dataNascimento)
-console.log(Object.keys(pessoa))
+//console.log(Object.keys(pessoa))
 
 //Object.assign 
 const dest = {a: 1}
