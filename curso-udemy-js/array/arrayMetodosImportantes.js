@@ -13,10 +13,11 @@ console.log(pilotos)
 
 //splice pode adicionar e remover elementos
 
-//adicionar
+//splice adicionar
 pilotos.splice(1, 0, 'Botas', 'Massa')
 console.log(pilotos)
 
+//splice remover
 pilotos.splice(3, 2) 
 console.log(pilotos)
 
