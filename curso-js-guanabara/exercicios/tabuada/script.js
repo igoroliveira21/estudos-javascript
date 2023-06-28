@@ -7,12 +7,11 @@ function tabuada() {
         var n = Number(numero.value)
         var c = 1
         tabuada.innerHTML = ''
-        for (c = 1; c <= 10; c ++) {
+        for (c = 1; c <= 10; c++) {
             var item = document.createElement('option')
             item.text = `${n} x ${c} = ${n*c}`
             item.value = `${tabuada}`
             tabuada.appendChild(item)
-
         }
         /*while(c <= 10) {
             var item = document.createElement('option')
