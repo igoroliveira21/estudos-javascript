@@ -7,7 +7,7 @@ const todosCursos = [...document.querySelectorAll(".curso")]
 
 todosCursos.map((el)=>{
     el.addEventListener("click", (evt) => {
-        const curso = evt.target
+        const curso = evt.target // se refere ao elemento que disparou o evento
         curso.classList.toggle("selecionado")
 
     })
