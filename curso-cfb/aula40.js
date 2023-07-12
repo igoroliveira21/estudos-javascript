@@ -5,7 +5,7 @@ const cursos = ["HTML", "CSS", "JavaScript", "PHP", "React", "MySQL", "ReactNati
 
 cursos.map((el, indice) => {
     const novoElemento = document.createElement("div")
-    novoElemento.setAttribute("id", `c${indice + 1}`)
+    novoElemento.setAttribute("id", `c${indice +1}`)
     novoElemento.setAttribute("class", "curso c1")
     novoElemento.innerHTML = el
     const btn_lixeira = document.createElement("img")
