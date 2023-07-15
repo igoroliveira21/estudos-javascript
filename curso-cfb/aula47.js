@@ -1,4 +1,4 @@
-// FIND permite pesquisar os elementos de um array e retorna o elemento
+// FIND permite pesquisar os elementos de um array e retorna o primeiro elemento
 const p_array = document.querySelector("#array")
 const txt_pesquisar = document.querySelector("#txt_pesquisar")
 const btnPesquisar  = document.querySelector("#btnPesquisar")
