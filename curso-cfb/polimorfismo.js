@@ -1,6 +1,19 @@
 //polimorfismo é quando tenho a capacidade de um mesmo método ter ações diferentes//
-class Carro{
+//Class Abstrata
+class CarroPadrao{
+    constructor(){
+        if(this.constructor===CarroPadrao){
+            throw new TypeError("Está classe não pode ser instânciada")
+        }
+        this.rodas=4
+        this.portas=4
+        this.ligado=false
+    }
+}
+
+class Carro extends CarroPadrao{
     constructor(tipo, estagioTurbo){
+        super()
         this.turbo=new Turbo(estagioTurbo)
         if(tipo==1){
             this.velMax=120
@@ -18,6 +31,9 @@ class Carro{
         console.log(this.nome)
         console.log(this.velMax)
         console.log(this.turbo)
+        console.log(this.rodas)
+        console.log(this.portas)
+        console.log(this.ligado)
         console.log('---------------')
     }
 }
@@ -58,7 +74,8 @@ class CarroEspecial extends Carro{
 
 const c1 = new Carro(1, 0)
 const c2 = new Carro(1, 1)
-const c3 = new CarroEspecial(3)
+const c3 = new CarroEspecial(3) 
+// const c4 = new CarroPadrao()
 
 
 c1.info()
