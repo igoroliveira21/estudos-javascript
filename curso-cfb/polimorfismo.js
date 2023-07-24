@@ -5,6 +5,12 @@ class CarroPadrao{
         if(this.constructor===CarroPadrao){
             throw new TypeError("Está classe não pode ser instânciada")
         }
+        if(this.ligar===undefined){
+            throw new TypeError("é obrigatório implementar o método ligar")
+        }
+        if(this.desligar===undefined){
+            throw new TypeError("é obrigatório implementar o método desligar")
+        }
         this.rodas=4
         this.portas=4
         this.ligado=false
@@ -35,6 +41,12 @@ class Carro extends CarroPadrao{
         console.log(this.portas)
         console.log(this.ligado)
         console.log('---------------')
+    }
+    ligar(){
+        this.ligado=true
+    }
+    desligar(){
+        this.ligado=false
     }
 }
 
