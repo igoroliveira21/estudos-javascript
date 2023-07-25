@@ -12,19 +12,22 @@
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    background-color: #eee;
+    border: 3px solid #bbb;
+    width: 216px;
+    border-radius: 5px;
 }
 
+/*Título*/
 .div_nome{
     display: flex;
     justify-content: center;
     align-items:center;
+    background-color: #eee;
+    border: 3px solid #eee;
+    width: 210px;
 }
 
-.div_display{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
 
 .div_teclas{
     display: flex;
@@ -32,6 +35,7 @@
     align-items:center;
     width: 210px;
     flex-wrap: wrap;
+    
 }
 
 .tecla{
@@ -51,4 +55,21 @@
 .teclaOp{
     background-color: #fc7373 !important;
     border: 1px solid #fa0303 !important;
+}
+
+/*Display*/
+.div_display{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 210px;
+}
+
+.display{
+    width: 210px;
+    background-color: #8a8;
+    text-align: right;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
