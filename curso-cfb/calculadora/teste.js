@@ -4,6 +4,7 @@ const teclaRes=document.querySelector(".res")
 const display=document.querySelector(".display")
 const ton=document.querySelector("#ton")
 const tlimpar=document.querySelector("#tlimpar")
+const tigual=document.querySelector("#tigual")
 
 let sinal=false
 let decimal=false
@@ -49,4 +50,11 @@ tlimpar.addEventListener("click", (evt)=>{
     sinal=false
     decimal=false
     display.innerHTML="0"
+})
+
+tigual.addEventListener("click", (evt)=>{
+    sinal=false
+    decima=false
+    const res = eval(display.innerHTML) //eval avilia a expressão e executa
+    display.innerHTML = res
 })
