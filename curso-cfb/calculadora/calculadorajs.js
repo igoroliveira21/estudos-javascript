@@ -33,12 +33,12 @@ teclasNum.forEach((e)=>{
 teclasOp.forEach((e)=>{
     e.addEventListener("click", (evt)=>{
         if(!sinal){
-            sinal=true
-            if(display.innerHTML=="0"){
+            sinal=true  
+            if(display.innerHTML="0"){
                 display.innerHTML=""
-            }
+            }          
             if(evt.target.innerHTML=="x"){
-                display.innerHTML+="*"
+                display.innerHTML+="*"                
             } else {
                 display.innerHTML+=evt.target.innerHTML
             }          
