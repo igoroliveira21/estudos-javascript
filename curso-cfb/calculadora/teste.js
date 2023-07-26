@@ -54,7 +54,7 @@ tlimpar.addEventListener("click", (evt)=>{
 
 tigual.addEventListener("click", (evt)=>{
     sinal=false
-    decima=false
+    decimal=false
     const res = eval(display.innerHTML) //eval avilia a expressão e executa
     display.innerHTML = res
 })
