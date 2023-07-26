@@ -6,6 +6,8 @@ const tlimpar=document.getElementById("tlimpar")
 const tigual=document.querySelector("#tigual")
 const tcpy=document.querySelector("#tcpy")
 const teste=document.querySelector("#teste")
+const aba_calc=document.querySelector("#aba_calc")
+const calc=document.querySelector("#calc")
 
 
 let sinal = false
@@ -66,4 +68,9 @@ tcpy.addEventListener("click", (evt)=>{
     // teste.select()
     // teste.setSelectionRange(0, 99999)//Mobile
     // navigator.clipboard.writeText(teste.value)
+})
+
+
+aba_calc.addEventListener("click", (evt)=>{
+    calc.classList.toggle("calc_exibir")
 })
