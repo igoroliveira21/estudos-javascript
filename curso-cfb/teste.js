@@ -8,7 +8,7 @@ const tcpy=document.querySelector("#tcpy")
 const teste=document.querySelector("#teste")
 const aba_calc=document.querySelector("#aba_calc")
 const calc=document.querySelector("#calc")
-
+const img_aba_calc=document.querySelector("#img_aba_calc")
 
 let sinal = false
 let decimal = false
@@ -73,4 +73,10 @@ tcpy.addEventListener("click", (evt)=>{
 
 aba_calc.addEventListener("click", (evt)=>{
     calc.classList.toggle("calc_exibir")
+    console.log(evt.target)
+    if(calc.classList.contains("calc_exibir")){
+        img_aba_calc.setAttribute("src", "seta-esquerda.svg")
+    } else{
+        img_aba_calc.setAttribute("src", "seta-direita.svg")
+    }
 })
