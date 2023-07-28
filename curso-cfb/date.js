@@ -37,7 +37,7 @@ btn_parar.addEventListener("click", (evt)=>{
     tmp_alarme.value = 0 
     timer.classList.remove("alarme")
     som_alarme.pause()
-    som_alarme.currentTime = 0;
+    som_alarme.currentTime = 0; 
 })
 
 
