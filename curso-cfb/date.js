@@ -6,16 +6,7 @@ const tmp_alarme=document.querySelector("#tmp_alarme")
 const hora_alarme=document.querySelector("#hora_alarme")
 const timer=document.querySelector("#timer")
 
-const data = new Date()
 
-let dia = data.getDate()
-dia = dia < 10 ? "0"+dia : dia
-
-let mes = data.getMonth()
-mes = mes < 10 ? "0"+mes : mes
-
-const data_r=dia+"/"+mes+"/"+data.getFullYear()
-data_div.innerHTML=data_r
 
 let som_alarme = new Audio("alarme.mp3") // aqui vai um som de alarme 
 som_alarme.loop = -1 //loop infinito
@@ -48,6 +39,19 @@ btn_parar.addEventListener("click", (evt)=>{
     som_alarme.pause()
     som_alarme.currentTime = 0;
 })
+
+
+
+const data = new Date()
+
+let dia = data.getDate()
+dia = dia < 10 ? "0"+dia : dia
+
+let mes = data.getMonth()
+mes = mes < 10 ? "0"+mes : mes
+
+const data_r=dia+"/"+mes+"/"+data.getFullYear()
+data_div.innerHTML=data_r
 
 
 const crelogio=() =>{
