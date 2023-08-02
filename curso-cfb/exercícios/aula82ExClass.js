@@ -86,7 +86,6 @@ btn_add.addEventListener("click", (evt)=>{
     const qtde = txt_qtde.value
     for(let i = 0; i < qtde; i++){
         bolas.push(new Bola(bolas,palco))
-
     }
 })
 
