@@ -11,6 +11,10 @@ let computador = {
 
     }
 }
+computador["Monitor"] = "22pol"
+computador.placaVideo = "rtx 580"
+
+console.log(computador)
 
 const computadores=[{
     cpu:"AMD Ryzem 5 3600",
