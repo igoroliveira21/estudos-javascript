@@ -1,4 +1,15 @@
 const cursos = ['JavaScript', 'HTML', 'CSS', 'Arduino', "RaspBerry", 'C#', 'Python']
-const carros = ['Polo', 'T-Cross', 'Golf', 'Onix', 'Cruize', 'Argo', 'Cronnos']
 
-export {cursos, carros}
+// const getTodosCursos = ( ) =>{
+//     return cursos
+// }
+
+export default function getTodosCursos () {
+    return cursos
+}
+
+export function getCurso (i_curso) {
+    return cursos[i_curso]
+}
+
+export {cursos}
