@@ -1,15 +1,24 @@
-const cursos = ['JavaScript', 'HTML', 'CSS', 'Arduino', "RaspBerry", 'C#', 'Python']
+class Cursos{
+    static cursos = ['JavaScript', 'HTML', 'CSS', 'Arduino', "RaspBerry", 'C#', 'Python']
 
-// const getTodosCursos = ( ) =>{
-//     return cursos
-// }
+    constructor(){}
 
-export default function getTodosCursos () {
-    return cursos
+    static getTodosCursos=()=>{
+        return this.cursos
+    }
+
+    static getCurso=(i_cursos)=>{
+        return this.cursos[i_cursos]
+    }
+    
+    static addCurso=(novoCurso)=>{
+        this.cursos.push(novoCurso)
+    }
+
+    static apagarCursos=()=>{
+        this.cursos = []
+    }
+
 }
 
-export function getCurso (i_curso) {
-    return cursos[i_curso]
-}
-
-export {cursos}
+export default Cursos

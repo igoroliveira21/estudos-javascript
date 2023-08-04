@@ -1,6 +1,6 @@
-import getTodosCursos from "./cursos.js";
-import { cursos, getCurso } from "./cursos.js";
+import c from './cursos.js'
 
-console.log(cursos)
-console.log(getTodosCursos())
-console.log(getCurso(0))
+
+c.addCurso("PhotoShop")
+c.apagarCursos()
+console.log(c.getTodosCursos())
