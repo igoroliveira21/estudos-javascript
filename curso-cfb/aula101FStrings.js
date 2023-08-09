@@ -35,3 +35,18 @@ console.log(sobrenome)
 
 let arr = nome.split(" ")
 console.log(arr)
+
+
+let parte = nome.substring(0, 3)
+console.log(parte)
+
+console.log(nome.toUpperCase())
+console.log(nome.toLowerCase())
+console.log(nome.toLocaleLowerCase())
+console.log(nome.toLocaleUpperCase())
+
+
+console.log(nome.valueOf())
+
+let num = 10
+console.log(typeof(num.toString()))
