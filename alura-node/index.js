@@ -6,14 +6,32 @@ function trataErro(erro) {
     throw new Error(chalk.red(erro.code, 'não há arquivo no diretório'));
 }
 
-function pegaArquivo(caminhoDoArquivo) {
-    const encoding = 'utf-8';
-    fs.readFile(caminhoDoArquivo, encoding, (erro, texto) => {//a função callback traz o resultado do readFile
-        if (erro) {
-            trataErro(erro);
-        }
+//async / await
+
+async function pegaArquivo(caminhoDoArquivo) {
+    try {
+        const encoding = 'utf-8';
+        const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
         console.log(chalk.green(texto));
-    })
+    } catch (erro) {
+        trataErro(erro)
+    }
+    
+    
 }
 
-pegaArquivo('./arquivos/texto.md');
+
+
+
+//promises com then
+
+// function pegaArquivo(caminhoDoArquivo) {
+//     const encoding = 'utf-8';
+//     fs.promises //Funções encadiadas
+//         .readFile(caminhoDoArquivo, encoding)
+//         .then((texto) => console.log(chalk.green(texto)))//caso aconteça algum erro no then o erro vai para a função catch
+//         .catch((erro) => trataErro(erro))
+// }
+
+
+pegaArquivo('./arquivos/');
