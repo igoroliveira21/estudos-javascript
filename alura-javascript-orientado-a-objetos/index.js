@@ -8,3 +8,5 @@ import Admin from './Admin.js';
 
 const novoAdmin = new Admin('Rodrigo', 'r@r.com', '1998-01-01')
 console.log(novoAdmin.nome)
+novoAdmin.nome = 'Igor'
+console.log(novoAdmin.nome)

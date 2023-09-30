@@ -13,5 +13,5 @@ export default class Admin extends User {
 }
 
 
-// const novoAdmin = new Admin('PiuPele', 'r@r.com', '04/08/1990')
-// console.log(novoAdmin.criarCurso('JavaScript', 20))
+const novoAdmin = new Admin('PiuPele', 'r@r.com', '04/08/1990')
+console.log(novoAdmin.nome)

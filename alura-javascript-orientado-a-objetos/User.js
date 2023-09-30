@@ -5,35 +5,41 @@ export default class User {
     #role
     #ativo
     constructor(nome, email, nascimento, role, ativo = true) {
-        this.#nome = nome
-        this.#email = email
-        this.#nascimento = nascimento
-        this.#role = role || 'estudante'
-        this.#ativo = ativo
+        this.#nome = nome;
+        this.#email = email;
+        this.#nascimento = nascimento;
+        this.#role = role || 'estudante';
+        this.#ativo = ativo;
     }
 
-    get nome() { // funções get não recebem nenhum argumento, na hora da chamada não abre parenteses
-        return this.#nome
+    get nome() {
+        return this.#nome;
     }
 
     get email() {
-        return this.#email
+        return this.#email;
     }
 
     get nascimento() {
-        return this.#nascimento
+        return this.#nascimento;
     }
 
     get role() {
-        return this.#role
+        return this.#role;
     }
 
     get ativo() {
-        return this.#ativo
+        return this.#ativo;
     }
-    
+
+    set nome(novoNome) {
+        if (novoNome === '') {
+            throw new Error('Formato inválido!')
+        }
+        this.#nome = novoNome;
+    }
+
     exibirInfos() {
-        const objUser = this.#montaObjUser();
-        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.role}, ${objUser.ativo}`
+        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.role}, ${objUser.ativo}`;
     }
 }
